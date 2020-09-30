@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.test4.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_senadores"
+        android:name="com.example.test4.ui.infoSenadores.SenadoresFragment"
+        android:label="Informacion Senadores"
+        tools:layout="@layout/fragment_senadores" />
+
+    <fragment
+        android:id="@+id/nav_diputados"
+        android:name="com.example.test4.ui.infoDiputados.DiputadosFragment"
+        android:label="Informacion Diputados"
+        tools:layout="@layout/fragment_diputados" />
+    <fragment
+        android:id="@+id/nav_seguimiento"
+        android:name="com.example.test4.ui.seguimiento.SeguimientoFragment"
+        android:label="Seguimiento"
+        tools:layout="@layout/fragment_seguimiento" />
+    <fragment
+        android:id="@+id/nav_notificaciones"
+        android:name="com.example.test4.ui.notificaciones.NotificacionesFragment"
+        android:label="Notificaciones"
+        tools:layout="@layout/fragment_notificaciones" />
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.example.test4.mapa.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
+</navigation>
